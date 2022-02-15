@@ -1,6 +1,5 @@
 ::Head Declarations
 @echo off
-::setlocal enabledelayedexpansion
 color A
 title Tic-Tac-Toe
 
