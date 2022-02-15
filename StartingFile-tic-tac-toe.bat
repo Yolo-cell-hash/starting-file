@@ -1,6 +1,6 @@
 ::Head Declarations
 @echo off
-setlocal enabledelayedexpansion
+::setlocal enabledelayedexpansion
 color A
 title Tic-Tac-Toe
 
@@ -30,22 +30,22 @@ cls
 
 if %p1Wins% LSS 2 (
 	if %p1Wins% GTR 0 (
-		echo X player has !p1Wins! win
+		echo X player has %p1Wins% win
 	) else (
-		echo X player has !p1Wins! wins
+		echo X player has %p1Wins% wins
 	)
 ) else (
-	echo X player has !p1Wins! wins
+	echo X player has %p1Wins% wins
 )
 
 if %p2Wins% LSS 2 (
 	if %p2Wins% GTR 0 (
-		echo O player has !p2Wins! win
+		echo O player has %p2Wins% win
 	) else (
-		echo O player has !p2Wins! wins
+		echo O player has %p2Wins% wins
 	)
 ) else (
-	echo O player has !p2Wins! wins
+	echo O player has %p2Wins% wins
 )
 echo.
 
@@ -160,10 +160,10 @@ echo.
 :endGame
 if %turn%==0 (
 	echo The O player has won the game!
-	set /a p2Wins = !p2Wins! + 1
+	set /a p2Wins = %p2Wins% + 1
 ) else (
 	echo The X player has won the game!
-	set /a p1Wins = !p1Wins! + 1
+	set /a p1Wins = %p1Wins% + 1
 )
 
 
