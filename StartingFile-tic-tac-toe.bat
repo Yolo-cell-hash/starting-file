@@ -207,7 +207,7 @@ echo		1 ^| 2 ^| 3
 echo 	---------
 echo		4 ^| 5 ^| 6
 echo 	---------
-echo		4 ^| 5 ^| 6
+echo		7 ^| 8 ^| 9
 echo.
 echo When prompted to play a new game, you can just hit enter
 echo instead of entering y.
